@@ -13,7 +13,7 @@ spec:
     - "server.soladmins.com"
     secretName: server-soladmins-com-tls
   rules:
-  - host: server.aws-esk.com
+  - host: server.soladmins.com
     http:
       paths:
       - path: /member-service
