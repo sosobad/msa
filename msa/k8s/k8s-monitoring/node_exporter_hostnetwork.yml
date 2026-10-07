@@ -26,8 +26,8 @@ spec:
             - containerPort: 9100
           volumeMounts:
             - name: proc
-              mountPath: /host/proc
-              readOnly: true
+              mountPath: /host/proc  # host/proc에 마운트할 거다. --> (hw --> os linux --> node-exporte에 mount 연결)
+              readOnly: true # 오직 readOnly 다른 건 개입 못하고 읽기만 가능하게 
             - name: sys
               mountPath: /host/sys
               readOnly: true

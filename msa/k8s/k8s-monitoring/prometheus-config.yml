@@ -13,6 +13,10 @@ data:
     scrape_configs:
       - job_name: 'node-exporter'
         kubernetes_sd_configs:
+        # role : node 
+        #쿠버네티스 클러스터에 있는 모든 Node를 자동으로 찾는다. 
+        # 예: worker-node-1, worker-node2, worker-node-3
+        # Prometheus는 Kubernetes API를 통해 Node 목록과 Node IP를 자동으로 가져온다.
           - role: node
         relabel_configs:
           - source_labels: [__address__]
