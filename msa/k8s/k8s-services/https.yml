@@ -16,15 +16,15 @@ spec:
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: server-soladmins-com-tls
+  name: a-soladmins-com-tls
   namespace: soldesk
 spec:
-  secretName: server-soladmins-com-tls
+  secretName: a-soladmins-com-tls
   duration: 2160h # 90days
   renewBefore: 360h # 15days
   issuerRef:
     name: my-issuer
     kind: ClusterIssuer
-  commonName: server.soladmins.com
+  commonName: a.soladmins.com
   dnsNames:
-  - server.soladmins.com
+  - a.soladmins.com

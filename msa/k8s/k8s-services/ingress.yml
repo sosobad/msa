@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - "server.soladmins.com"
-    secretName: server-soladmins-com-tls
+    - "a.soladmins.com"
+    secretName: a-soladmins-com-tls
   rules:
-  - host: server.soladmins.com
+  - host: a.soladmins.com
     http:
       paths:
       - path: /member-service
