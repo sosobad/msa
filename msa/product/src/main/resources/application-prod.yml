@@ -29,4 +29,5 @@ cloud:
     region:
       static: ap-northeast-2
     s3:
-      bucket: aws-eks-frontend-image-986881030850-ap-northeast-2-an
+      bucket: ss33-986881030850-ap-northeast-2-an
+
